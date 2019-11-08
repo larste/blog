@@ -8,4 +8,4 @@ install:
   - pipenv install
 
 script:
-  - pylint blog
+  - pipenv run pylint blog
