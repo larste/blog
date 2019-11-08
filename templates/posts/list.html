@@ -1,0 +1,13 @@
+<html>
+    <body>
+        Recent posts
+        <hr />
+        {% if posts %}
+            <ul class="list-unstyled">
+                {% for post in posts %}
+                    <li>{{ post.created_at|date:'d.m.Y' }} <a href="posts/{{ post.id }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </body>
+</html>
