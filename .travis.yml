@@ -5,8 +5,7 @@ python:
 
 install:
   - pip install pipenv
-  - pipenv install
-  - pipenv shell
+  - pipenv install --dev
 
 script:
-  - pylint blog
+  - pylint **/*.py
