@@ -6,6 +6,7 @@ python:
 install:
   - pip install pipenv
   - pipenv install
+  - pipenv shell
 
 script:
-  - pipenv run pylint blog
+  - pylint blog
